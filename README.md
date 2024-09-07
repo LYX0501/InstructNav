@@ -1,6 +1,6 @@
 # InstructNav
 
-Enabling robots to navigate following diverse language instructions in unexplored environments is an attractive goal for human-robot interaction. In this work, we propose InstructNav, a generic instruction navigation system. InstructNav makes the first endeavor to handle various instruction navigation tasks without any navigation training or pre-built maps. To reach this goal, we introduce Dynamic Chain-of-Navigation (DCoN) to unify the planning process for different types of navigation instructions. Furthermore, we propose Multi-sourced Value Maps to model key elements in instruction navigation so that linguistic DCoN planning can be converted into robot actionable trajectories. 
+Enabling robots to navigate following diverse language instructions in unexplored environments is an attractive goal for human-robot interaction. In this work, we propose InstructNav, a generic instruction navigation system. InstructNav makes the first endeavor to handle various instruction navigation tasks without any navigation training or pre-built maps. To reach this goal, we introduce **Dynamic Chain-of-Navigation (DCoN)** to unify the planning process for different types of navigation instructions. Furthermore, we propose **Multi-sourced Value Maps** to model key elements in instruction navigation so that linguistic DCoN planning can be converted into robot actionable trajectories. 
 
 ![InstructNav](https://github.com/LYX0501/InstructNav/blob/main/InstructNav.png)
 
