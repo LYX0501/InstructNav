@@ -12,7 +12,7 @@ With InstructNav, we complete the R2R-CE task in a zero-shot way for the first t
 ## BibTex
 Please cite our paper if you find it helpful :)
 ```
-@misc{long2024instructnavzeroshotgenericinstruction,
+@misc{InstructNav,
       title={InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment}, 
       author={Yuxing Long and Wenzhe Cai and Hongcheng Wang and Guanqi Zhan and Hao Dong},
       year={2024},
