@@ -6,6 +6,9 @@ Enabling robots to navigate following diverse language instructions in unexplore
 
 With InstructNav, we complete the R2R-CE task in a zero-shot way for the first time and outperform many task-training methods. Besides, InstructNav also surpasses the previous SOTA method by 10.48% on the zero-shot Habitat ObjNav and by 86.34% on demand-driven navigation DDN. Real robot experiments on diverse indoor scenes further demonstrate our method's robustness in coping with the environment and instruction variations.
 
+## 🔥 News
+- 2024.9.5: Our paper is accepted by CoRL 2024. 
+
 ## BibTex
 Please cite our paper if you find it helpful :)
 ```
