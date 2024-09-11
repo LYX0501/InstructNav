@@ -11,16 +11,16 @@ gpt4_api_key = os.environ['GPT4_API_KEY']
 gpt4v_api_base = os.environ['GPT4V_API_BASE']
 gpt4v_api_key = os.environ['GPT4V_API_KEY']
 
-deployment_name = 'gpt-4-1106-preview'
-api_version = '2024-02-15-preview'
+deployment_name = os.environ['GPT4_API_DEPLOY']
+api_version = os.environ['GPT4_API_VERSION']
 gpt4_client = AzureOpenAI(
     api_key=gpt4_api_key,  
     api_version=api_version,
     base_url=f"{gpt4_api_base}/openai/deployments/{deployment_name}"
 )
 
-deployment_name = 'gpt-4-vision-preview'
-api_version = '2024-02-15-preview'
+deployment_name = os.environ['GPT4V_API_DEPLOY']
+api_version = os.environ['GPT4V_API_VERSION']
 gpt4v_client = AzureOpenAI(
     api_key=gpt4v_api_key,  
     api_version=api_version,
