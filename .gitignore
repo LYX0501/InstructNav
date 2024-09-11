@@ -1,4 +1,3 @@
-./thirdparty/GLEE/clip-vit-base-patch32
 ./tmp
 *.pth
 *.pyc
