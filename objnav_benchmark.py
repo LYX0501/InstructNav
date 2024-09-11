@@ -19,7 +19,7 @@ def write_metrics(metrics,path="objnav_hm3d.csv"):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--eval_episodes",type=int,default=300)
+    parser.add_argument("--eval_episodes",type=int,default=500)
     parser.add_argument("--mapper_resolution",type=float,default=0.05)
     parser.add_argument("--path_resolution",type=float,default=0.2)
     parser.add_argument("--path_scale",type=int,default=5)
