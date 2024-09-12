@@ -201,7 +201,7 @@ class Instruct_Mapper:
         try:
             distance = pointcloud_2d_distance(self.navigable_pcd,semantic_pointcloud) 
             affordance = 1 - (distance - distance.min()) / (distance.max() - distance.min() + 1e-6)
-            affordance[distance > 1.0] = 0
+            affordance[distance > 0.1] = 0
             affordance = affordance.cpu().numpy()
             return affordance
         except:
