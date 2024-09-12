@@ -44,7 +44,15 @@ For example,
 ```
 python objnav_benchmark.py
 ```
-And all the episode results, intermediate results such as GPT4 input/output and value maps will be saved in /tmp/ directory.
+And all the episode results, intermediate results such as GPT4 input/output and value maps will be saved in /tmp/ directory. The real-time agent first-person-view image observation, depth and segmentation will be saved in the project root directory. Examples are shown below:
+![test](https://github.com/user-attachments/assets/51a65b07-70e2-49f3-a850-815b0ec151d0)
+
+https://github.com/user-attachments/assets/04e37b91-c524-4c51-86d1-8fb72325f612
+
+
+
+
+
 
 ## BibTex
 Please cite our paper if you find it helpful :)
