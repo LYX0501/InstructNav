@@ -5,9 +5,9 @@ from habitat.config.default_structured_configs import (
     FogOfWarConfig,
     TopDownMapMeasurementConfig,
 )
-HM3D_CONFIG_PATH = "/home/PJLAB/caiwenzhe/Desktop/library/habitat-lab/habitat-lab/habitat/config/benchmark/nav/objectnav/objectnav_hm3d.yaml"
-MP3D_CONFIG_PATH = "/home/PJLAB/caiwenzhe/Desktop/library/habitat-lab/habitat-lab/habitat/config/benchmark/nav/objectnav/objectnav_mp3d.yaml"
-R2R_CONFIG_PATH = "/home/PJLAB/caiwenzhe/Desktop/library/habitat-lab/habitat-lab/habitat/config/benchmark/nav/vln_r2r.yaml"
+HM3D_CONFIG_PATH = "<YOUR SAVE PATH>/habitat-lab/habitat-lab/habitat/config/benchmark/nav/objectnav/objectnav_hm3d.yaml"
+MP3D_CONFIG_PATH = "<YOUR SAVE PATH>/habitat-lab/habitat-lab/habitat/config/benchmark/nav/objectnav/objectnav_mp3d.yaml"
+R2R_CONFIG_PATH = "<YOUR SAVE PATH>/habitat-lab/habitat-lab/habitat/config/benchmark/nav/vln_r2r.yaml"
 
 def hm3d_config(path:str=HM3D_CONFIG_PATH,stage:str='val',episodes=200):
     habitat_config = habitat.get_config(path)
