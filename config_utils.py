@@ -38,7 +38,7 @@ def hm3d_config(path:str=HM3D_CONFIG_PATH,stage:str='val',episodes=200):
         })
         habitat_config.habitat.simulator.agents.main_agent.sim_sensors.depth_sensor.max_depth=5.0
         habitat_config.habitat.simulator.agents.main_agent.sim_sensors.depth_sensor.normalize_depth=False
-    	habitat_config.habitat.task.measurements.success.success_distance = 0.25
+        habitat_config.habitat.task.measurements.success.success_distance = 0.25
     return habitat_config
     
 def mp3d_config(path:str=MP3D_CONFIG_PATH,stage:str='val',episodes=200):
