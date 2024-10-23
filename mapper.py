@@ -193,7 +193,7 @@ class Instruct_Mapper:
         except:
             return np.zeros((self.navigable_pcd.point.positions.shape[0],),dtype=np.float32)
     
-    def get_semantic_affordance(self,target_class):
+    def get_semantic_affordance(self,target_class,threshold=0.1):
         semantic_pointcloud = o3d.t.geometry.PointCloud()
         for entity in self.object_entities:
             if entity['class'] in target_class:
@@ -201,7 +201,7 @@ class Instruct_Mapper:
         try:
             distance = pointcloud_2d_distance(self.navigable_pcd,semantic_pointcloud) 
             affordance = 1 - (distance - distance.min()) / (distance.max() - distance.min() + 1e-6)
-            affordance[distance > 0.1] = 0
+            affordance[distance > threshold] = 0
             affordance = affordance.cpu().numpy()
             return affordance
         except:
@@ -278,11 +278,11 @@ class Instruct_Mapper:
             affordance[obstacle_affordance == 0] = 0
             return affordance,self.visualize_affordance(affordance)
         elif complete_flag:
-            affordance = self.get_semantic_affordance([target_class])
+            affordance = self.get_semantic_affordance([target_class],threshold=0.1)
             return affordance,self.visualize_affordance(affordance)
         else:
             obstacle_affordance = self.get_obstacle_affordance()
-            semantic_affordance = self.get_semantic_affordance([target_class])
+            semantic_affordance = self.get_semantic_affordance([target_class],threshold=1.5)
             action_affordance = self.get_action_affordance(action)
             gpt4v_affordance = self.get_gpt4v_affordance(gpt4v_pcd)
             history_affordance = self.get_trajectory_affordance()
