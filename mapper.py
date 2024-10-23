@@ -293,7 +293,7 @@ class Instruct_Mapper:
 
     def get_debug_affordance_map(self,action,target_class,gpt4v_pcd):
         obstacle_affordance = self.get_obstacle_affordance()
-        semantic_affordance = self.get_semantic_affordance([target_class])
+        semantic_affordance = self.get_semantic_affordance([target_class],threshold=1.5)
         action_affordance = self.get_action_affordance(action)
         gpt4v_affordance = self.get_gpt4v_affordance(gpt4v_pcd)
         history_affordance = self.get_trajectory_affordance()
