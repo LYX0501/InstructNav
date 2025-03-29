@@ -1,5 +1,4 @@
 apex==0.9.10dev
-detectron2.egg==info
 einops==0.8.0
 fairscale==0.4.4
 fvcore==0.1.5.post20221221
