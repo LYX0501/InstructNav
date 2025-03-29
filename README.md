@@ -11,7 +11,7 @@ With InstructNav, we complete the R2R-CE task in a zero-shot way for the first t
 - 2024.9.5: Our paper is accepted by CoRL 2024. Codes will be released in the recent.
 
 ### Dependency ###
-Our project is based on the [habitat-sim](https://github.com/facebookresearch/habitat-sim?tab=readme-ov-file) and [habitat-lab](https://github.com/facebookresearch/habitat-lab). Please follow the guides to install them in your python environment. You can directly install the latest version of habitat-lab and habitat-sim. And make sure you have properly download the navigation scenes [(HM3D, MP3D)](https://github.com/facebookresearch/habitat-lab/blob/main/DATASETS.md) and the episode dataset for both visual-language navigation (VLN-CE) and object navigation.
+Our project is based on the [habitat-sim](https://github.com/facebookresearch/habitat-sim?tab=readme-ov-file), [habitat-lab](https://github.com/facebookresearch/habitat-lab), and [Detectron2](https://github.com/facebookresearch/detectron2). Please follow the guides to install them in your python environment. You can directly install the latest version of habitat-lab and habitat-sim. And make sure you have properly download the navigation scenes [(HM3D, MP3D)](https://github.com/facebookresearch/habitat-lab/blob/main/DATASETS.md) and the episode dataset for both visual-language navigation (VLN-CE) and object navigation.
 
 ### Installation ###
 Firstly, clone our repo as:
